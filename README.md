@@ -7,7 +7,17 @@ This file holds record about my findings to learn how to use VIM editor. Very us
 - Normal Mode (by default, can apply different commands)
 - Insert Mode (press i on keyboard to switch to, or a for append, used to start editing)
 - Visual Mode (press esc to switch to normal mode, then press v, helps to select, copy, delete etc. operations)
-- Replace Mode (esc > R)
+- Replace Mode (esc > R), this replaces the content right after the cursor
+
+### Inserting, Appending, Adding lines
+
+- i - get into insert mode
+- a - append, adds at the end
+- I - insert before a line
+- A - append after a line
+- o - new line below, and insert mode
+- O - new line above, and insert mode
+
 
 ### Commands for vim editor
 
@@ -26,6 +36,7 @@ This file holds record about my findings to learn how to use VIM editor. Very us
 
 ### Navigation
 
+- hjkl - left, bottom, up, right navigation
 - w - jump one word  
 - b - jump one word backward  
 - 20w - jump 20 words  
@@ -49,18 +60,21 @@ This file holds record about my findings to learn how to use VIM editor. Very us
 
 ### Replacing, Changing, Deleting
 
-- r - replace  
-- R - replace mode  
+- r - replace a letter
+- R - replace mode, overrides the content starting from the cursor to the next
 - cw - replace a word, w is for word, will work from the cursor  
 - c7w - replace 7 words  
 - C - delete the rest of the line and go to insert mode  
 - D - delete without going to insert mode  
 - D2w - delete the next 2 words  
 - cc - replace the whole line  
+- 9cc - replace the next 9 lines
 - dd - delete the whole line
+- 4dd - delete the next 4 lines
 - ciw - change inner word, i.e - selecting the whole word by putting the cursor anywhere in the word  
 - diw - delete inner word
 - c% - change everything from this bracket to that bracket
+- ggdG - delete whole file, gg for going to top, d to delete everything up to end of file(G)
 
 #### For brackets (useful when programming)
 
@@ -99,3 +113,16 @@ This file holds record about my findings to learn how to use VIM editor. Very us
 - y5w - yank 5 words
 - yiw - yank inner word
 - yi) - copy everything up to this bracket  
+
+### Indentation and Shifting
+
+- \> shift right the selected block
+- \< - shift left the selected block
+- = - indent the selected block
+- \>> & << - Shift the line where cursor is
+- == - Indent the line where cursor is
+- gg=G - Indent the whole file, gg for navigating to beginning of the file, then indent (=) up to G which means end of file
+
+### Others
+
+zz - center selected line, even if the cursor is in the end of file, that will show centered on the screen.
