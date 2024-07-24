@@ -39,7 +39,6 @@ This file holds record about my findings to learn how to use VIM editor. Very us
 - $ - end of a line
 - 0 - beginning of a line
 
-
 ### Undo/Redo
 
 - u - undo  
@@ -76,3 +75,27 @@ This file holds record about my findings to learn how to use VIM editor. Very us
 
 - :s/old/new/g, e.g - replace 'dev' with 'ops' in one line - :s/dev/ops/g  
 - :%s/old/new/g - replace everywhere
+
+### Repeat
+
+- . - press dot to repeat the last operation, e.g - pasting a content in the file or anything.
+
+### Copy, Paste, Select
+
+- v - visual mode
+- V - visual line, select the line where the cursor is
+- Ctrl + v - visual block, select blocks manually by navigating top bottom sidewise etc.  
+
+### After selection
+
+- d - delete
+- c - change
+- y - yanking(copy)
+- p - paste after
+- P - paste before
+- yy - yank/copy whole line
+- 5yy - copy the next 5 lines
+- 9p - paste 9 lines
+- y5w - yank 5 words
+- yiw - yank inner word
+- yi) - copy everything up to this bracket  
