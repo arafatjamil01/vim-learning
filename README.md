@@ -26,10 +26,19 @@ This file holds record about my findings to learn how to use VIM editor. Very us
 
 ### Navigation
 
-w - jump one word
-b - jump one word backward
-20w - jump 20 words
-14b - jump 14 words back
+- w - jump one word  
+- b - jump one word backward  
+- 20w - jump 20 words  
+- 14b - jump 14 words back  
+- 8k - jump 8 lines on top
+- % - jump from opening to closing of a bracket
+- gg - beginning of a file
+- G - end of a file
+- 17G - go to line number 17
+- :17 - go to line number 17
+- $ - end of a line
+- 0 - beginning of a line
+
 
 ### Undo/Redo
 
